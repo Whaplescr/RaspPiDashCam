@@ -13,7 +13,7 @@ vid_title = str(vid_title) + "_" + format_time.replace(':','')
 
 file_string = "out/backup_camera/%s.avi"%(vid_title)
 
-cap = cv2.VideoCapture('http://192.168e.50.158:8081/frame.mjpg')
+cap = cv2.VideoCapture('http://192.168.50.158:8081/frame.mjpg')
 _fourcc = cv2.VideoWriter_fourcc('M', 'J', 'P', 'G')
 out = cv2.VideoWriter(file_string, _fourcc, 12,(frame_width,frame_height))
 
